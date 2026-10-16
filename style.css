@@ -1,0 +1,178 @@
+body {
+    margin: 0px;
+}
+
+#header {
+    color: #1B2340;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    padding-right: 50px;
+}
+
+#header div {
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+#header nav ul {
+    display: flex;
+    gap: 80px;
+    list-style: none;
+}
+
+#header nav ul a {
+    text-decoration: none;
+    color: #1B2340
+}
+
+main {
+    background-color: #F4F6FB;
+    padding: 30px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#acceuil {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+
+#acceuil div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-family: sans-serif;
+}
+
+#acceuil div:first-child div:first-child {
+    color: #5B4FD6;
+    font-weight: bold;
+}
+
+#title {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#acceuil .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1B2340;
+    height: 190px;
+    width: 230px;
+    border-radius: 16px;
+}
+
+#acceuil .box h2 {
+    margin: 10px;
+    color: white;
+    font-weight: normal;
+}
+
+#description {
+    color: gray;
+    font-size: 17px;
+}
+
+main button {
+    background-color: #5B4FD6;
+    width: 200px;
+    height: 50px;
+    border: transparent;
+    border-radius: 16px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#ateliers {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#ateliers .title {
+    color: #1B2340;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#ateliers .description {
+    color: gray;
+}
+
+#cards {
+    background-color: white;
+    border: gray 1px solid;
+    border-radius: 16px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    border: 1px rgb(171, 170, 170) solid;
+    border-right: transparent;
+    border-left: transparent;
+    border-bottom: transparent;
+    color: gray;
+    margin-left: 60px;
+    background-color: #F4F6FB;
+}
+
+
+
+@media (max-width : 375px) {
+    #header {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #header nav ul {
+        display: flex;
+        align-items: flex-start;
+        gap: 40px;
+        list-style: none;
+        padding: 0px;
+    }
+
+    #acceuil {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        gap: 50px;
+    }
+
+    #acceuil div:first-child div:first-child {
+        color: #5B4FD6;
+        font-weight: bold;
+        width: 300px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        border: 1px rgb(171, 170, 170) solid;
+        border-right: transparent;
+        border-left: transparent;
+        border-bottom: transparent;
+        color: gray;
+        background-color: #F4F6FB;
+        margin-left: 0px;
+    }
+
+    footer div p p {
+        font-weight: bold;
+        color: #1B2340;
+    }
+}
